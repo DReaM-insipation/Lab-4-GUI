@@ -6,7 +6,11 @@ namespace Лаба_4_1
         {
             InitializeComponent();
             Figure.form1 = this;
-            Circle circle = new Circle(50,50,50);
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Circle circle = new Circle(50, 50, 50);
             circle.MoveRight();
         }
     }
