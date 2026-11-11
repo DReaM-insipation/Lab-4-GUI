@@ -10,12 +10,14 @@ namespace Лаба_4_1
     {
         public double xCenter;
         public double yCenter;
+        public static Form1 form1;
         public abstract void DrawBlack();
         public abstract void HideDrawingBackGround();
         public void MoveRight()
         {
             while (true)
             {
+
                 DrawBlack();
                 System.Threading.Thread.Sleep(100);
                 HideDrawingBackGround();

@@ -5,6 +5,12 @@ namespace Лаба_4_1
         public Form1()
         {
             InitializeComponent();
+            Figure.form1 = this;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
