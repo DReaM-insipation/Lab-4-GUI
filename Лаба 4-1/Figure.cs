@@ -8,8 +8,8 @@ namespace Лаба_4_1
 {
     abstract class Figure
     {
-        public double xCenter;
-        public double yCenter;
+        public float xCenter;
+        public float yCenter;
         public static Form1 form1;
         public abstract void DrawBlack();
         public abstract void HideDrawingBackGround();

@@ -6,11 +6,8 @@ namespace Лаба_4_1
         {
             InitializeComponent();
             Figure.form1 = this;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            Circle circle = new Circle(50,50,50);
+            circle.MoveRight();
         }
     }
 }
