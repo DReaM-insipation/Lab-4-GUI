@@ -25,7 +25,7 @@ namespace Лаба_4_1
         public override void HideDrawingBackGround()
         {
             Graphics gr = Figure.form1.CreateGraphics();
-            SolidBrush brush = new SolidBrush(Color.White);
+            SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
             gr.FillEllipse(brush, this.xCenter, this.yCenter, this.Radius, this.Radius);
         }
     }
