@@ -8,7 +8,7 @@ namespace Лаба_4_1
 {
     internal class Square:Figure
     {
-        public float sideLength;
+        public int sideLength;
 
         public override void DrawBlack()
         {
