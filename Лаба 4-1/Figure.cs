@@ -15,15 +15,17 @@ namespace Лаба_4_1
         public abstract void HideDrawingBackGround();
         public void MoveRight()
         {
-            
-            while (true)
+            Task.Run(() =>
             {
+                while (true)
+                {
 
-                DrawBlack();
-                System.Threading.Thread.Sleep(100);
-                HideDrawingBackGround();
-                this.xCenter += 1;
-            }
+                    DrawBlack();
+                    System.Threading.Thread.Sleep(100);
+                    HideDrawingBackGround();
+                    this.xCenter += 1;
+                }
+            });
         }
     }
 }

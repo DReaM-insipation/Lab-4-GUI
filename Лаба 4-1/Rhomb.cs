@@ -23,10 +23,10 @@ namespace Лаба_4_1
             SolidBrush brush = new SolidBrush(Color.Black);
             Point[] points =
             {
-                new Point(this.xCenter+this.horDiagLen, this.yCenter),
-                new Point(this.xCenter, this.yCenter+this.vertDiagLen),
-                new Point(this.xCenter-this.horDiagLen, this.yCenter),
-                new Point(this.xCenter, this.yCenter-this.vertDiagLen),
+                new Point(this.xCenter+this.horDiagLen/2, this.yCenter),
+                new Point(this.xCenter, this.yCenter+this.vertDiagLen/2),
+                new Point(this.xCenter-this.horDiagLen/2, this.yCenter),
+                new Point(this.xCenter, this.yCenter-this.vertDiagLen/2),
             };
             gr.FillPolygon(brush, points);
         }
@@ -36,10 +36,10 @@ namespace Лаба_4_1
             SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
             Point[] points =
             {
-                new Point(this.xCenter+this.horDiagLen, this.yCenter),
-                new Point(this.xCenter, this.yCenter+this.vertDiagLen),
-                new Point(this.xCenter-this.horDiagLen, this.yCenter),
-                new Point(this.xCenter, this.yCenter-this.vertDiagLen),
+                new Point(this.xCenter+this.horDiagLen/2, this.yCenter),
+                new Point(this.xCenter, this.yCenter+this.vertDiagLen/2),
+                new Point(this.xCenter-this.horDiagLen/2, this.yCenter),
+                new Point(this.xCenter, this.yCenter-this.vertDiagLen/2),
             };
             gr.FillPolygon(brush, points);
         }
