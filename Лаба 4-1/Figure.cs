@@ -19,7 +19,6 @@ namespace Лаба_4_1
             {
                 while (true)
                 {
-
                     DrawBlack();
                     System.Threading.Thread.Sleep(100);
                     HideDrawingBackGround();

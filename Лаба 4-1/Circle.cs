@@ -9,7 +9,7 @@ namespace Лаба_4_1
     internal class Circle : Figure
     {
         public int Radius;
-        public Circle(int radius, int x, int y)
+        public Circle(int x, int y, int radius )
         {
             this.xCenter = x;
             this.yCenter = y;
