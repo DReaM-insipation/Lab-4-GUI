@@ -9,7 +9,12 @@ namespace Лаба_4_1
     internal class Square:Figure
     {
         public int sideLength;
-
+        public Square(int x, int y, int sL)
+        {
+            this.xCenter = x; 
+            this.yCenter = y;
+            this.sideLength = sL;
+        }
         public override void DrawBlack()
         {
             Graphics gr = Figure.form1.CreateGraphics();

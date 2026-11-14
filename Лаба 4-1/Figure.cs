@@ -15,6 +15,7 @@ namespace Лаба_4_1
         public abstract void HideDrawingBackGround();
         public void MoveRight()
         {
+            
             while (true)
             {
 

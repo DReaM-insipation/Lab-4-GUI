@@ -10,6 +10,13 @@ namespace Лаба_4_1
     {
         public int horDiagLen;
         public int vertDiagLen;
+        public Rhomb(int x, int y, int hD, int vD)
+        {
+            this.xCenter = x;
+            this.yCenter = y;
+            this.horDiagLen = hD;
+            this.vertDiagLen = vD;
+        }
         public override void DrawBlack()
         {
             Graphics gr = Figure.form1.CreateGraphics();
