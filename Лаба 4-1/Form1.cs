@@ -10,18 +10,24 @@ namespace Лаба_4_1
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void circle_button_Click(object sender, EventArgs e)
+        {
             Circle c1 = new Circle(50, 50, 50);
-            Square s1 = new Square(50, 150, 50);
-            Rhomb r1 = new Rhomb(50, 250, 50,30);
             c1.MoveRight();
+        }
+        private void square_button_Click(object sender, EventArgs e)
+        {
+            Square s1 = new Square(50, 50, 50);
             s1.MoveRight();
+        }
+
+        private void rhomb_button_Click(object sender, EventArgs e)
+        {
+            Rhomb r1 = new Rhomb(50, 50, 50, 100);
             r1.MoveRight();
-            Circle c2 = new Circle(100, 100, 100);
-            c2.MoveRight();
-            Square s2 = new Square(310, 200, 100);
-            s2.MoveRight();
-            Rhomb r2 = new Rhomb(200, 300, 100, 150);
-            r2.MoveRight();
         }
     }
 }

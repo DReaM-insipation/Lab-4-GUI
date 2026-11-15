@@ -20,13 +20,13 @@ namespace Лаба_4_1
         {
             Graphics gr = Figure.form1.CreateGraphics();
             SolidBrush brush = new SolidBrush(Color.Black);
-            gr.FillEllipse(brush, this.xCenter, this.yCenter, this.Radius, this.Radius);
+            gr.FillEllipse(brush, this.xCenter - this.Radius, this.yCenter - this.Radius, this.xCenter + this.Radius, this.yCenter + this.Radius);
         }
         public override void HideDrawingBackGround()
         {
             Graphics gr = Figure.form1.CreateGraphics();
             SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
-            gr.FillEllipse(brush, this.xCenter, this.yCenter, this.Radius, this.Radius);
+            gr.FillEllipse(brush, this.xCenter- this.Radius, this.yCenter- this.Radius, this.xCenter + this.Radius, this.yCenter + this.Radius);
         }
     }
 }
