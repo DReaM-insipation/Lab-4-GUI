@@ -19,8 +19,8 @@ namespace Лаба_4_1
         }
         public override void DrawBlack()
         {
-            Graphics gr = Figure.form1.CreateGraphics();
-            SolidBrush brush = new SolidBrush(Color.Black);
+            using Graphics gr = Figure.form1.CreateGraphics();
+            using SolidBrush brush = new SolidBrush(Color.Black);
             Point[] points =
             {
                 new Point(this.xCenter+this.horDiagLen/2, this.yCenter),
@@ -32,8 +32,8 @@ namespace Лаба_4_1
         }
         public override void HideDrawingBackGround()
         {
-            Graphics gr = Figure.form1.CreateGraphics();
-            SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
+            using Graphics gr = Figure.form1.CreateGraphics();
+            using SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
             Point[] points =
             {
                 new Point(this.xCenter+this.horDiagLen/2, this.yCenter),

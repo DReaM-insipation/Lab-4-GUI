@@ -8,25 +8,25 @@ namespace Лаба_4_1
 {
     internal class Circle : Figure
     {
-        public int Radius;
+        public int radius;
         public Circle(int x, int y, int radius )
         {
             this.xCenter = x;
             this.yCenter = y;
-            this.Radius = radius;
+            this.radius = radius;
         }
 
         public override void DrawBlack()
         {
-            Graphics gr = Figure.form1.CreateGraphics();
-            SolidBrush brush = new SolidBrush(Color.Black);
-            gr.FillEllipse(brush, this.xCenter - this.Radius, this.yCenter - this.Radius, 2 * this.Radius, 2 * this.Radius);
+            using Graphics gr = Figure.form1.CreateGraphics();
+            using SolidBrush brush = new SolidBrush(Color.Black);
+            gr.FillEllipse(brush, this.xCenter - this.radius, this.yCenter - this.radius, 2 * this.radius, 2 * this.radius);
         }
         public override void HideDrawingBackGround()
         {
-            Graphics gr = Figure.form1.CreateGraphics();
-            SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
-            gr.FillEllipse(brush, this.xCenter - this.Radius, this.yCenter - this.Radius, 2 * this.Radius, 2 * this.Radius);
+            using Graphics gr = Figure.form1.CreateGraphics();
+            using SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
+            gr.FillEllipse(brush, this.xCenter - this.radius, this.yCenter - this.radius, 2 * this.radius, 2 * this.radius);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Лаба_4_1
         {
             Task.Run(() =>
             {
-                while (true)
+                while (this.xCenter <= Figure.form1.Width)
                 {
                     DrawBlack();
                     System.Threading.Thread.Sleep(100);

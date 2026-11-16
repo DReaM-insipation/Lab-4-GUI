@@ -20,13 +20,13 @@ namespace Лаба_4_1
         }
         private void square_button_Click(object sender, EventArgs e)
         {
-            Square s1 = new Square(50, 50, 50);
+            Square s1 = new Square(50, 150, 50);
             s1.MoveRight();
         }
 
         private void rhomb_button_Click(object sender, EventArgs e)
         {
-            Rhomb r1 = new Rhomb(50, 50, 50, 100);
+            Rhomb r1 = new Rhomb(50, 250, 50, 100);
             r1.MoveRight();
         }
     }

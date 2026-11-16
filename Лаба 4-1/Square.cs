@@ -17,14 +17,14 @@ namespace Лаба_4_1
         }
         public override void DrawBlack()
         {
-            Graphics gr = Figure.form1.CreateGraphics();
-            SolidBrush brush = new SolidBrush(Color.Black);
+            using Graphics gr = Figure.form1.CreateGraphics();
+            using SolidBrush brush = new SolidBrush(Color.Black);
             gr.FillRectangle(brush, this.xCenter-this.sideLength/2, this.yCenter - this.sideLength / 2,this.sideLength,this.sideLength);
         }
         public override void HideDrawingBackGround()
         {
-            Graphics gr = Figure.form1.CreateGraphics();
-            SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
+            using Graphics gr = Figure.form1.CreateGraphics();
+            using SolidBrush brush = new SolidBrush(Figure.form1.BackColor);
             gr.FillRectangle(brush, this.xCenter - this.sideLength / 2, this.yCenter - this.sideLength / 2, this.sideLength, this.sideLength);
 
         }
